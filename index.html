@@ -1,223 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyCR7 | The Future of Decentralized Finance</title>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        :root {
-            --bg: #0a0a0a;
-            --text: #e0e0e0;
-            --accent: #00ffcc;
-            --accent-dark: #00b38f;
-            --gray: #1a1a1a;
-            --border: #333;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }
-        body { background-color: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; transition: 0.3s; }
-        a { text-decoration: none; color: inherit; }
-        
-        /* Header */
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(10,10,10,0.9); backdrop-filter: blur(10px); z-index: 100; }
-        .logo { font-size: 24px; font-weight: bold; color: var(--accent); display: flex; align-items: center; gap: 10px; }
-        .logo span { color: white; font-size: 14px; background: var(--gray); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border); }
-        .nav-right { display: flex; align-items: center; gap: 15px; }
-        select { background: var(--gray); color: white; border: 1px solid var(--border); padding: 8px; border-radius: 6px; outline: none; cursor: pointer; font-family: inherit; }
-        .btn { background: var(--accent); color: #000; padding: 10px 20px; border-radius: 6px; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
-        .btn:hover { background: var(--accent-dark); box-shadow: 0 0 15px rgba(0, 255, 204, 0.4); }
-        
-        /* Hero */
-        .hero { text-align: center; padding: 100px 5% 60px; }
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; background: linear-gradient(90deg, #fff, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.2rem; color: #aaa; max-width: 800px; margin: 0 auto 40px; }
-        
-        /* Terminal */
-        .terminal { background: #000; border: 1px solid var(--border); border-radius: 8px; max-width: 800px; margin: 0 auto; text-align: left; direction: ltr; font-family: monospace; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .terminal-header { padding: 10px; background: var(--gray); border-bottom: 1px solid var(--border); display: flex; gap: 5px; border-radius: 8px 8px 0 0; }
-        .dot { width: 12px; height: 12px; border-radius: 50%; }
-        .dot.r { background: #ff5f56; } .dot.y { background: #ffbd2e; } .dot.g { background: #27c93f; }
-        .terminal-body { padding: 20px; color: #ccc; font-size: 14px; line-height: 1.8; }
-        .terminal-body span { color: var(--accent); }
-        
-        /* Features */
-        .features { padding: 80px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .feature-card { background: var(--gray); padding: 30px; border-radius: 8px; border: 1px solid var(--border); transition: 0.3s; text-align: var(--align, left); }
-        .feature-card:hover { border-color: var(--accent); transform: translateY(-5px); }
-        .feature-card h3 { color: var(--accent); margin-bottom: 15px; }
-        .feature-card p { color: #999; font-size: 0.95rem; }
-        
-        /* Tokenomics */
-        .tokenomics { padding: 80px 5%; text-align: center; }
-        .tokenomics h2 { font-size: 2.5rem; margin-bottom: 40px; }
-        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
-        .stat-box { background: var(--gray); padding: 20px; border-radius: 8px; border: 1px solid var(--border); }
-        .stat-box h4 { color: #aaa; font-size: 1rem; margin-bottom: 10px; }
-        .stat-box p { font-size: 2rem; font-weight: bold; color: var(--accent); }
-
-        /* Footer */
-        footer { text-align: center; padding: 40px; border-top: 1px solid var(--border); color: #666; font-size: 0.9rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050b12">
+<title>MYCR7 | Community Rewards</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#050b12;color:#eafafa;font-family:Arial,sans-serif;line-height:1.7}header{position:sticky;top:0;background:#08131e;border-bottom:1px solid #16434a;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;z-index:5}.logo{font-size:23px;font-weight:bold;color:#36e0cf}select{background:#10232d;color:white;border:1px solid #247078;padding:9px;border-radius:8px}main{max-width:1050px;margin:auto;padding:25px 18px}.hero{text-align:center;padding:65px 15px 55px;background:radial-gradient(ellipse at top,#123c43 0%,#050b12 70%);border-radius:20px}.hero h1{font-size:clamp(36px,7vw,65px);line-height:1.15;margin:10px 0;color:#45e6d4}.hero p{max-width:680px;margin:18px auto;color:#c2d9dc}.btn{display:inline-block;background:#32d8c7;color:#031313;text-decoration:none;font-weight:bold;padding:13px 25px;border-radius:9px;margin:10px}.section{margin:28px 0;padding:25px;background:#0b1822;border:1px solid #173c45;border-radius:16px}.section h2{color:#42dfd0;margin-top:0}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px}.stat{background:#102630;padding:18px;border-radius:12px;text-align:center}.stat strong{display:block;font-size:25px;color:#45e6d4}.stat span{font-size:14px;color:#c4d8dc}table{width:100%;border-collapse:collapse;margin-top:12px}th,td{padding:12px 9px;text-align:left;border-bottom:1px solid #23414a}th{color:#42dfd0}li{margin:9px 0;color:#d2e3e5}.note{color:#a9c2c7;font-size:14px}.price{font-size:24px;color:#42dfd0;font-weight:bold}footer{text-align:center;padding:30px;color:#8faeb3}a{color:#48e1d2}
+@media(max-width:600px){.section{padding:18px 14px}th,td{font-size:13px;padding:9px 5px}.hero{padding:45px 10px}}
+</style>
 </head>
 <body>
+<header><div class="logo">MYCR7</div><select id="language" onchange="changeLanguage(this.value)"><option value="en">English</option><option value="fa">فارسی</option><option value="ar">العربية</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option></select></header>
+<main>
+<section class="hero">
+<h1 id="heroTitle">MYCR7 Community Campaign</h1>
+<p id="heroText">Join the community, complete tasks, invite friends and earn provisional campaign rewards.</p>
+<a class="btn" id="joinBtn" href="https://t.me/MyCR7_Official_bot" target="_blank">Join the Official Bot</a>
+<p class="note" id="heroNote">Official Telegram: @MyCR7_Official</p>
+</section>
+<section class="section"><h2 id="tokenTitle">Token Distribution</h2><div class="stats">
+<div class="stat"><strong>21B</strong><span id="totalLabel">Total supply</span></div>
+<div class="stat"><strong>8B</strong><span id="airLabel">Airdrop allocation</span></div>
+<div class="stat"><strong>10B</strong><span id="programLabel">Presale & programs</span></div>
+<div class="stat"><strong>3B</strong><span id="charityLabel">Charity reserve</span></div>
+</div></section>
+<section class="section"><h2 id="rewardTitle">Airdrop & Campaign Rewards</h2>
+<table><thead><tr><th id="taskHead">Task</th><th id="rewardHead">Reward</th></tr></thead><tbody>
+<tr><td id="telegramTask">Join official Telegram</td><td>100,000 MYCR7</td></tr>
+<tr><td id="instagramTask">Submit Instagram username and get admin approval</td><td>100,000 MYCR7</td></tr>
+<tr><td id="walletTask">Register a Solana wallet</td><td>100,000 MYCR7</td></tr>
+<tr><td id="referralTask">Each valid referral</td><td>100,000 MYCR7</td></tr>
+<tr><td id="fiveTask">Every 5 valid referrals</td><td>500,000 MYCR7 bonus</td></tr>
+<tr><td>50 valid referrals</td><td>5,000,000 MYCR7 milestone</td></tr>
+<tr><td>100 valid referrals</td><td>7,000,000 MYCR7 milestone</td></tr>
+<tr><td>200 valid referrals</td><td>10,000,000 MYCR7 milestone</td></tr>
+<tr><td id="quizTask">Correct daily quiz answer</td><td>10,000 MYCR7</td></tr>
+</tbody></table>
+<p class="note" id="milestoneNote">Every 5 valid referrals earns an additional 500,000 MYCR7 bonus. Milestone rewards: 5,000,000 at 50 referrals, 7,000,000 at 100, and 10,000,000 at 200. Final rewards are subject to campaign settlement.</p>
+</section>
+<section class="section"><h2 id="stepsTitle">How to Participate</h2><ol>
+<li id="step1">Open the official Telegram bot.</li><li id="step2">Join the official Telegram channel.</li><li id="step3">Submit your Instagram username and wait for admin approval.</li><li id="step4">Register your Solana public wallet address.</li><li id="step5">Invite friends using your referral link and complete the daily quiz.</li>
+</ol></section>
+<section class="section"><h2 id="refTitle">Referral Rules</h2><p id="refText">A valid referral must join the official Telegram channel and have their Instagram account approved by an admin. If they are not a member at final settlement, the provisional referral reward is deducted. Rejoining before settlement restores eligibility, but does not create a second referral reward.</p></section>
+<section class="section"><h2 id="saleTitle">Presale Program</h2><div class="price">$0.000001</div><p id="saleText">Day 1 price per MYCR7 token. The daily price increases by 10% (compounded). Daily allocation: 100 million tokens. Maximum purchase: $10 per wallet.</p></section>
+<section class="section"><h2 id="charityHeading">Charity Program</h2><p id="charityText">5% of the 3 billion MYCR7 charity reserve (150 million tokens) is planned to be sold monthly. Proceeds are intended to support people in need.</p></section>
+<section class="section"><h2 id="importantTitle">Important Information</h2><p id="importantText">Displayed rewards are provisional campaign points, not tokens already transferred to your wallet. Final token amounts are calculated from verified campaign records and distributed after the campaign ends and the admin completes settlement. No guaranteed market price or profit is promised.</p></section>
+</main>
+<footer>MYCR7 Community • <a href="https://t.me/MyCR7_Official" target="_blank">@MyCR7_Official</a></footer>
+<script>
+const zh={
+heroTitle:'MYCR7 社区活动',
+heroText:'加入社区、完成任务、邀请好友并获得临时活动奖励积分。',
+joinBtn:'打开官方机器人',
+heroNote:'官方 Telegram：@MyCR7_Official',
+tokenTitle:'代币分配',
+totalLabel:'代币总供应量',
+airLabel:'空投分配',
+programLabel:'预售及其他计划',
+charityLabel:'慈善储备',
+rewardTitle:'空投及活动奖励',
+taskHead:'任务',
+rewardHead:'奖励',
+telegramTask:'加入官方 Telegram',
+instagramTask:'提交 Instagram 用户名并等待管理员审核',
+walletTask:'注册 Solana 钱包',
+referralTask:'每位有效邀请',
+fiveTask:'每邀请 5 位有效用户',
+quizTask:'每日答题正确',
+milestoneNote:'每邀请 5 位有效用户，额外奖励 500,000 MYCR7。50 人奖励 5,000,000，100 人奖励 7,000,000，200 人奖励 10,000,000 MYCR7。最终奖励以活动结算为准。',
+stepsTitle:'参与步骤',
+step1:'打开官方 Telegram 机器人。',
+step2:'加入官方 Telegram 频道。',
+step3:'提交 Instagram 用户名并等待管理员审核。',
+step4:'登记 Solana 公共钱包地址。',
+step5:'使用专属邀请链接邀请好友并完成每日答题。',
+refTitle:'邀请规则',
+refText:'有效邀请者必须加入官方 Telegram 频道，且 Instagram 账号通过管理员审核。最终结算时若未加入频道，临时邀请奖励将被扣除。结算前重新加入可恢复资格，但不会重复获得邀请奖励。',
+saleTitle:'预售计划',
+saleText:'MYCR7 代币首日价格为 0.000001 美元。此后每日复合上涨 10%。每日分配 1 亿枚代币，每个钱包最多购买 10 美元。',
+charityHeading:'慈善计划',
+charityText:'计划每月出售 30 亿枚 MYCR7 慈善储备的 5%（1.5 亿枚代币），所得款项用于帮助有需要的人。',
+importantTitle:'重要说明',
+importantText:'页面显示的奖励是临时活动积分，并非已转入钱包的代币。活动结束后，管理员核实记录并完成结算，才会计算和发放最终代币数量。不保证市场价格或收益。'
+};
 
-    <header>
-        <div class="logo">MyCR7 <span>Official</span></div>
-        <div class="nav-right">
-            <select id="langSelector" onchange="changeLanguage(this.value)">
-                <option value="en">🇬🇧 English</option>
-                <option value="fa">🇮🇷 فارسی</option>
-                <option value="ar">🇸🇦 العربية</option>
-                <option value="ru">🇷🇺 Русский</option>
-                <option value="tr">🇹🇷 Türkçe</option>
-            </select>
-            <a href="https://t.me/MyCR7_Official_bot" class="btn" id="startBtn">Start Now</a>
-        </div>
-    </header>
-
-    <section class="hero">
-        <h1 id="heroTitle">The Future of Decentralized Finance<br>with MyCR7</h1>
-        <p id="heroDesc">A transparent, secure, and real ecosystem. Reserve your share of the 6,000,000 initial token distribution now and join our community.</p>
-        
-        <div class="terminal">
-            <div class="terminal-header">
-                <div class="dot r"></div>
-                <div class="dot y"></div>
-                <div class="dot g"></div>
-            </div>
-            <div class="terminal-body">
-                <div><span>dev@mycr7</span>:~$ ./start_airdrop</div>
-                <div>[+] Connecting to Telegram Bot...</div>
-                <div>[+] Verifying Channel Membership... <span>DONE</span></div>
-                <div>[+] Checking Instagram Requirement... <span>DONE</span></div>
-                <div>[+] Allocating 500 MYCR7 Tokens...</div>
-                <div><span>SUCCESS</span>: Welcome to the future.</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="feature-card">
-            <h3 id="f1Title">🚀 Fast Registration</h3>
-            <p id="f1Desc">Just a few clicks on Telegram and Instagram verification to reserve your share. No technical complexities.</p>
-        </div>
-        <div class="feature-card">
-            <h3 id="f2Title">🔒 High Security</h3>
-            <p id="f2Desc">We never ask for your private keys or financial deposits. Your wallet security is our priority.</p>
-        </div>
-        <div class="feature-card">
-            <h3 id="f3Title">🤝 Referral System</h3>
-            <p id="f3Desc">Earn more points and tokens by inviting your friends and contribute to the growth of the ecosystem.</p>
-        </div>
-    </section>
-
-    <section class="tokenomics">
-        <h2 id="tokTitle">Tokenomics</h2>
-        <div class="stats">
-            <div class="stat-box">
-                <h4 id="t1">Total Supply</h4>
-                <p>21M</p>
-            </div>
-            <div class="stat-box">
-                <h4 id="t2">Initial Distribution</h4>
-                <p>6M</p>
-            </div>
-            <div class="stat-box">
-                <h4 id="t3">Initial Price Prediction</h4>
-                <p>$2.00</p>
-            </div>
-            <div class="stat-box">
-                <h4 id="t4">Vesting Period</h4>
-                <p>90 Days</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p id="footerText">© 2026 MyCR7 Project. All rights reserved.</p>
-    </footer>
-
-    <script>
-        const translations = {
-            en: {
-                dir: "ltr", align: "left", startBtn: "Start Now",
-                title: "The Future of Decentralized Finance<br>with MyCR7",
-                desc: "A transparent, secure, and real ecosystem. Reserve your share of the 6,000,000 initial token distribution now and join our community.",
-                f1T: "🚀 Fast Registration", f1D: "Just a few clicks on Telegram and Instagram verification to reserve your share. No technical complexities.",
-                f2T: "🔒 High Security", f2D: "We never ask for your private keys or financial deposits. Your wallet security is our priority.",
-                f3T: "🤝 Referral System", f3D: "Earn more points and tokens by inviting your friends and contribute to the growth of the ecosystem.",
-                tokT: "Tokenomics", t1: "Total Supply", t2: "Initial Distribution", t3: "Initial Price Prediction", t4: "Vesting Period",
-                footer: "© 2026 MyCR7 Project. All rights reserved."
-            },
-            fa: {
-                dir: "rtl", align: "right", startBtn: "شروع کنید",
-                title: "آینده مالی غیرمتمرکز<br>با MyCR7",
-                desc: "یک اکوسیستم شفاف، امن و واقعی. سهم خود را از ۶ میلیون توکن توزیع اولیه همین حالا رزرو کنید و به جامعه ما بپیوندید.",
-                f1T: "🚀 ثبت‌نام سریع", f1D: "فقط با چند کلیک در تلگرام و تایید اینستاگرام، سهم خود را رزرو کنید. بدون نیاز به پیچیدگی‌های فنی.",
-                f2T: "🔒 امنیت بالا", f2D: "ما هرگز از شما کلید خصوصی یا مبالغ مالی نمی‌خواهیم. امنیت کیف پول شما اولویت ماست.",
-                f3T: "🤝 سیستم دعوت", f3D: "با دعوت از دوستان خود، امتیاز و توکن بیشتری دریافت کنید و در رشد اکوسیستم سهیم باشید.",
-                tokT: "اقتصاد توکن (Tokenomics)", t1: "کل عرضه", t2: "توزیع اولیه", t3: "پیش‌بینی قیمت آغازین", t4: "دوره آزادسازی",
-                footer: "© ۲۰۲۶ پروژه MyCR7. تمامی حقوق محفوظ است."
-            },
-            ar: {
-                dir: "rtl", align: "right", startBtn: "ابدأ الآن",
-                title: "مستقبل التمويل اللامركزي<br>مع MyCR7",
-                desc: "نظام بيئي شفاف وآمن وحقيقي. احجز حصتك من توزيع 6,000,000 رمز أولي الآن وانضم إلى مجتمعنا.",
-                f1T: "🚀 تسجيل سريع", f1D: "فقط بضع نقرات على Telegram والتحقق من Instagram لحجز حصتك.",
-                f2T: "🔒 أمان عالي", f2D: "نحن لا نطلب أبدًا مفاتيحك الخاصة أو الودائع المالية.",
-                f3T: "🤝 نظام الإحالة", f3D: "اكسب المزيد من النقاط والرموز من خلال دعوة أصدقائك.",
-                tokT: "اقتصاديات الرمز", t1: "إجمالي العرض", t2: "التوزيع الأولي", t3: "توقع السعر الأولي", t4: "فترة الاستحقاق",
-                footer: "© 2026 مشروع MyCR7. جميع الحقوق محفوظة."
-            },
-            ru: {
-                dir: "ltr", align: "left", startBtn: "Начать",
-                title: "Будущее децентрализованных финансов<br>с MyCR7",
-                desc: "Прозрачная, безопасная и реальная экосистема. Зарезервируйте свою долю из 6 000 000 токенов.",
-                f1T: "🚀 Быстрая регистрация", f1D: "Всего несколько кликов в Telegram и верификация в Instagram.",
-                f2T: "🔒 Высокая безопасность", f2D: "Мы никогда не запрашиваем приватные ключи или депозиты.",
-                f3T: "🤝 Реферальная система", f3D: "Зарабатывайте больше, приглашая друзей.",
-                tokT: "Токеномика", t1: "Общее предложение", t2: "Первоначальное распределение", t3: "Прогноз цены", t4: "Период вестинга",
-                footer: "© 2026 Проект MyCR7. Все права защищены."
-            },
-            tr: {
-                dir: "ltr", align: "left", startBtn: "Şimdi Başla",
-                title: "Merkeziyetsiz Finansın Geleceği<br>MyCR7 ile",
-                desc: "Şeffaf, güvenli ve gerçek bir ekosistem. 6.000.000 token dağıtımından payınızı şimdi ayırtın.",
-                f1T: "🚀 Hızlı Kayıt", f1D: "Telegram ve Instagram doğrulaması ile sadece birkaç tıklama.",
-                f2T: "🔒 Yüksek Güvenlik", f2D: "Özel anahtarlarınızı veya mevduatlarınızı asla istemiyoruz.",
-                f3T: "🤝 Referans Sistemi", f3D: "Arkadaşlarınızı davet ederek daha fazla puan kazanın.",
-                tokT: "Tokenomik", t1: "Toplam Arz", t2: "İlk Dağıtım", t3: "İlk Fiyat Tahmini", t4: "Kazanma Süresi",
-                footer: "© 2026 MyCR7 Projesi. Tüm hakları saklıdır."
-            }
-        };
-
-        function changeLanguage(lang) {
-            const t = translations[lang];
-            document.documentElement.lang = lang;
-            document.documentElement.dir = t.dir;
-            
-            document.getElementById("startBtn").innerText = t.startBtn;
-            document.getElementById("heroTitle").innerHTML = t.title;
-            document.getElementById("heroDesc").innerText = t.desc;
-            document.getElementById("f1Title").innerText = t.f1T;
-            document.getElementById("f1Desc").innerText = t.f1D;
-            document.getElementById("f2Title").innerText = t.f2T;
-            document.getElementById("f2Desc").innerText = t.f2D;
-            document.getElementById("f3Title").innerText = t.f3T;
-            document.getElementById("f3Desc").innerText = t.f3D;
-            document.getElementById("tokTitle").innerText = t.tokT;
-            document.getElementById("t1").innerText = t.t1;
-            document.getElementById("t2").innerText = t.t2;
-            document.getElementById("t3").innerText = t.t3;
-            document.getElementById("t4").innerText = t.t4;
-            document.getElementById("footerText").innerText = t.footer;
-
-            // تغییر جهت کارت‌ها
-            const cards = document.querySelectorAll('.feature-card');
-            cards.forEach(card => {
-                card.style.textAlign = t.align;
-            });
-        }
-    </script>
+const ids=['heroTitle','heroText','joinBtn','heroNote','tokenTitle','totalLabel','airLabel','programLabel','charityLabel','rewardTitle','taskHead','rewardHead','telegramTask','instagramTask','walletTask','referralTask','fiveTask','quizTask','milestoneNote','stepsTitle','step1','step2','step3','step4','step5','refTitle','refText','saleTitle','saleText','charityHeading','charityText','importantTitle','importantText'];
+const translations={
+fa:[
+'کمپین اجتماعی MYCR7','به جامعه بپیوندید، وظایف را انجام دهید و دوستانتان را دعوت کنید.','ورود به ربات رسمی','کانال رسمی: @MyCR7_Official','توزیع توکن','کل عرضه','سهم ایردراپ','پیش‌فروش و برنامه‌ها','ذخیره خیریه','پاداش‌های کمپین','فعالیت','پاداش','عضویت در تلگرام رسمی','ارسال نام اینستاگرام و تأیید مدیر','ثبت کیف پول سولانا','هر دعوت معتبر','هر ۵ دعوت معتبر','پاسخ صحیح آزمون روزانه','به‌ازای هر ۵ دعوت معتبر، ۵۰۰٬۰۰۰ MYCR7 پاداش اضافه تعلق می‌گیرد. پاداش ۵۰ دعوت ۵٬۰۰۰٬۰۰۰، ۱۰۰ دعوت ۷٬۰۰۰٬۰۰۰ و ۲۰۰ دعوت ۱۰٬۰۰۰٬۰۰۰ MYCR7 است. مبلغ نهایی پس از تسویه کمپین تأیید می‌شود.','مراحل شرکت','ورود به ربات رسمی تلگرام.','عضویت در کانال رسمی تلگرام.','ارسال نام اینستاگرام و انتظار برای تأیید مدیر.','ثبت آدرس عمومی کیف پول سولانا.','دعوت دوستان و شرکت در آزمون روزانه.','قوانین دعوت','دعوت معتبر باید عضو کانال رسمی تلگرام شود و اینستاگرام او تأیید شود. اگر هنگام تسویه عضو نباشد، پاداش موقت کسر می‌شود. عضویت دوباره پیش از تسویه، اعتبار را بازمی‌گرداند اما پاداش تکراری نمی‌دهد.','برنامه پیش‌فروش','قیمت روز اول هر توکن ۰٫۰۰۰۰۰۱ دلار است. قیمت روزانه با رشد مرکب ۱۰ درصد افزایش می‌یابد. سهمیه روزانه ۱۰۰ میلیون توکن و حداکثر خرید هر کیف پول ۱۰ دلار است.','برنامه خیریه','قرار است ماهانه ۵ درصد از ذخیره خیریه ۳ میلیاردی، معادل ۱۵۰ میلیون توکن، فروخته شود. درآمد برای حمایت از نیازمندان در نظر گرفته شده است.','اطلاعات مهم','پاداش‌ها امتیاز موقت کمپین هستند و هنوز به کیف پول منتقل نشده‌اند. مقدار نهایی پس از پایان کمپین و بررسی و تسویه مدیر محاسبه و توزیع می‌شود. هیچ قیمت یا سودی تضمین نمی‌شود.'
+],
+ar:[
+'حملة مجتمع MYCR7','انضم إلى المجتمع وأكمل المهام وادعُ أصدقاءك.','افتح البوت الرسمي','القناة الرسمية: @MyCR7_Official','توزيع التوكن','إجمالي المعروض','مخصص الإيردروب','البيع المسبق والبرامج','احتياطي الأعمال الخيرية','مكافآت الحملة','المهمة','المكافأة','الانضمام إلى تيليجرام الرسمي','إرسال اسم إنستغرام وموافقة الإدارة','تسجيل محفظة سولانا','كل إحالة صالحة','كل 5 إحالات صالحة','إجابة الاختبار اليومي الصحيحة','تُمنح مكافأة إضافية قدرها 500,000 MYCR7 عن كل 5 إحالات صالحة. مكافأة 50 إحالة هي 5,000,000، و100 إحالة 7,000,000، و200 إحالة 10,000,000 MYCR7. تخضع المكافآت النهائية للتسوية.','كيفية المشاركة','افتح بوت تيليجرام الرسمي.','انضم إلى القناة الرسمية.','أرسل اسم إنستغرام وانتظر موافقة الإدارة.','سجل عنوان محفظة سولانا العام.','ادعُ الأصدقاء وأكمل الاختبار اليومي.','قواعد الإحالة','يجب أن ينضم المدعو إلى القناة الرسمية وأن توافق الإدارة على إنستغرام. إذا لم يكن عضواً عند التسوية تخصم المكافأة المؤقتة. العودة قبل التسوية تعيد الأهلية دون مكافأة ثانية.','برنامج البيع المسبق','سعر اليوم الأول 0.000001 دولار لكل توكن. يرتفع السعر يومياً بنسبة 10% مركبة. التخصيص اليومي 100 مليون توكن والحد الأقصى 10 دولارات لكل محفظة.','برنامج الأعمال الخيرية','من المخطط بيع 5% شهرياً من احتياطي خيري قدره 3 مليارات (150 مليون توكن) لدعم المحتاجين.','معلومات مهمة','المكافآت نقاط مؤقتة وليست توكنات محولة إلى محفظتك. تحسب الكمية النهائية بعد انتهاء الحملة والتحقق والتسوية من الإدارة. لا يوجد سعر أو ربح مضمون.'
+],
+ru:[
+'Кампания сообщества MYCR7','Присоединяйтесь, выполняйте задания и приглашайте друзей.','Открыть официальный бот','Официальный канал: @MyCR7_Official','Распределение токенов','Общее предложение','Эйрдроп','Предпродажа и программы','Благотворительный резерв','Награды кампании','Задание','Награда','Вступить в официальный Telegram','Отправить имя Instagram и получить одобрение','Зарегистрировать кошелёк Solana','За каждое приглашение','За каждые 5 приглашений','Правильный ответ на ежедневную викторину','За каждые 5 действительных приглашений начисляется дополнительный бонус 500 000 MYCR7. Награда за 50 приглашений — 5 000 000, за 100 — 7 000 000, за 200 — 10 000 000 MYCR7. Итоговые награды подтверждаются после завершения расчётов кампании.','Как участвовать','Откройте официальный Telegram-бот.','Вступите в официальный канал.','Отправьте имя Instagram и дождитесь одобрения.','Зарегистрируйте публичный адрес Solana.','Приглашайте друзей и проходите ежедневную викторину.','Правила приглашений','Приглашённый должен вступить в официальный канал, а Instagram должен быть одобрен администратором. Если к расчёту он не состоит в канале, награда вычитается. Повторное вступление восстанавливает право, но не даёт вторую награду.','Предпродажа','Цена первого дня — $0.000001 за токен. Затем цена ежедневно растёт на 10% с капитализацией. Дневной объём — 100 млн токенов, лимит покупки — $10 на кошелёк.','Благотворительность','Планируется ежемесячно продавать 5% резерва в 3 млрд токенов (150 млн) для помощи нуждающимся.','Важно','Награды — предварительные баллы кампании, а не токены, уже переведённые на кошелёк. Итог рассчитывается после окончания кампании и проверки администратором. Цена и прибыль не гарантируются.'
+],
+tr:[
+'MYCR7 Topluluk Kampanyası','Topluluğa katılın, görevleri tamamlayın ve arkadaşlarınızı davet edin.','Resmî Botu Aç','Resmî kanal: @MyCR7_Official','Token Dağılımı','Toplam arz','Airdrop tahsisi','Ön satış ve programlar','Hayır rezervi','Kampanya Ödülleri','Görev','Ödül','Resmî Telegram kanalına katıl','Instagram adını gönder ve yönetici onayı al','Solana cüzdanı kaydet','Her geçerli davet','Her 5 geçerli davette','Günlük testte doğru cevap','Her 5 geçerli davet için ek 500.000 MYCR7 bonus verilir. 50 davet ödülü 5.000.000, 100 davet ödülü 7.000.000 ve 200 davet ödülü 10.000.000 MYCR7\'dir. Nihai ödüller kampanya hesaplaşmasıyla kesinleşir.','Nasıl Katılınır','Resmî Telegram botunu açın.','Resmî kanala katılın.','Instagram adınızı gönderin ve onay bekleyin.','Genel Solana cüzdan adresinizi kaydedin.','Arkadaşlarınızı davet edin ve günlük testi tamamlayın.','Davet Kuralları','Geçerli davet için kişi resmî kanala katılmalı ve Instagram hesabı yönetici tarafından onaylanmalıdır. Son hesaplamada üye değilse geçici ödül düşülür. Yeniden katılım uygunluğu geri getirir ancak ikinci ödül vermez.','Ön Satış Programı','İlk gün token fiyatı 0,000001 dolardır. Fiyat her gün bileşik olarak %10 artar. Günlük tahsis 100 milyon token, cüzdan başına alım limiti 10 dolardır.','Hayır Programı','3 milyarlık hayır rezervinin %5’inin (150 milyon token) her ay satılması planlanmaktadır. Gelirler ihtiyaç sahiplerine destek içindir.','Önemli Bilgiler','Ödüller geçici kampanya puanlarıdır; cüzdanınıza aktarılmış tokenlar değildir. Nihai miktar kampanya bitince ve yönetici kayıtları doğrulayınca hesaplanır. Fiyat veya kâr garantisi yoktur.'
+]
+};
+function changeLanguage(lang){
+if(lang==='en'){location.reload();return;}
+const values=lang==='zh'?zh:translations[lang];
+if(!values)return;
+ids.forEach((id,i)=>{const el=document.getElementById(id);if(el)el.textContent=lang==='zh'?values[id]:values[i];});
+document.documentElement.lang=lang;
+document.documentElement.dir=(lang==='fa'||lang==='ar')?'rtl':'ltr';
+}
+</script>
 </body>
 </html>
